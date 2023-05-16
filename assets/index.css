@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "philosopher";
+  src: url(./font/CharlemagneStd-Bold.otf);
+}
+@font-face {
+  font-family: "BellGothicBlack";
+  src: url(./font/BellGothicStd-Black.otf);
+}
+@font-face {
+  font-family: "Bree";
+  src: url(./font/BreeSerif-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #121113;
+}
+
+li,
+i {
+  font-family: Bree, sans-serif;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  transform: scaleY(1.2);
+  transition: 0.4s ease;
+  position: relative;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  li,
+  i {
+    font-size: 0.8rem;
+  }
+}
+
+li:hover,
+i:hover {
+  transition: 0.2s ease;
+  color: #e4e6c3;
+}
+
+#previous,
+#next {
+  display: none;
+}
+
+header {
+  max-width: 1000px;
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background: url(../assets/image/bacground-copy.png) no-repeat center top;
+  padding: 0 40px;
+  display: flex;
+  justify-content: left;
+}
+@media screen and (max-width: 880px) {
+  header {
+    background-size: 600px;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+  }
+}
+
+header-text {
+  text-align: left;
+  align-self: end;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: philosopher, sans-serif;
+}
+
+h2 {
+  font-family: BellGhothicBlack, sans-serif;
+}
+
+h2:last-child {
+  text-align: right;
+}
+
+main {
+  max-width: 1000px;
+  width: 80%;
+  margin: 80px auto 20px;
+  background: #899878;
+  border-radius: 40px;
+  border: 4px solid #222725;
+  box-shadow: 11px 7px 2px 6px #f7f7f2;
+}
+@media screen and (max-width: 800px) {
+  main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    width: 100%;
+  }
+}
+
+ul {
+  padding: 20px 0px 20px 0px;
+}
+
+a {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  li.version {
+    position: relative;
+    font-size: 0;
+  }
+}
+
+li:nth-child(2)::before {
+  content: "VI";
+}
+
+li:nth-child(3)::before {
+  content: "VII";
+}
+
+li:nth-child(4)::before {
+  content: "VIII";
+}
+
+li.version::before {
+  display: none;
+  position: absolute;
+  transform: translateY(-50%);
+  font-family: Bree, sans-serif;
+  font-size: 1.2rem;
+}
+li.version::before li.version::before:hover {
+  color: #e4e6c3;
+}
+@media screen and (max-width: 800px) {
+  li.version::before {
+    display: block;
+  }
+}
+
+#ancrage {
+  position: absolute;
+  transform: translateY(-130px);
+}
+
+#VI,
+#VII,
+#VIII,
+#Info {
+  display: none;
+}
+
+.text {
+  padding: 20px 0;
+  position: relative;
+  border-top: 6px double #222725;
+  border-bottom: 2px solid #222725;
+}
+
+h3 {
+  padding: 20px;
+  font-family: philosopher, sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+p {
+  font-family: BellGhothicBlack, sans-serif;
+  padding: 20px 0;
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  background-color: #fcfcfb;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #f7f7ee 15%, transparent 5%), linear-gradient(225deg, #f7f7ee 15%, transparent 5%), linear-gradient(45deg, #f7f7ee 15%, transparent 5%), linear-gradient(315deg, #f7f7ee 15%, #fcfcfb 5%);
+  background-position: 12px 0, 12px 0, 0 0, 0 0;
+  background-size: 12px 12px;
+  background-repeat: repeat;
+}
+
+#container {
+  height: 700px;
+  align-self: center;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  border: 1px solid #e4e6c3;
+}
+@media screen and (max-width: 570px) {
+  #container {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #container {
+    height: 500px;
+  }
+}
+
+.boutton {
+  border-top: 2px solid #222725;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+footer i {
+  transform: none;
+  font-size: 1rem;
+}/*# sourceMappingURL=index.css.map */

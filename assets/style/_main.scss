@@ -1,0 +1,145 @@
+main {
+  max-width: 1000px;
+  width: 80%;
+  margin: 80px auto 20px;
+  background: #899878;
+  border-radius: 40px;
+
+  border: 4px solid #222725;
+  box-shadow: 11px 7px 2px 6px #f7f7f2;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+ul {
+  // display: flex;
+  // justify-content: space-around;
+  padding: 20px 0px 20px 0px;
+  // position: relative;
+}
+a {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.5s ease;
+
+  text-decoration: none;
+  color: black;
+}
+
+///////////////***************LI-BEFORE-MEDIA-QUERRIES************/////////////
+
+li.version {
+  @media screen and (max-width: 800px) {
+    position: relative;
+    font-size: 0;
+  }
+}
+li:nth-child(2)::before {
+  content: "VI";
+}
+li:nth-child(3)::before {
+  content: "VII";
+}
+li:nth-child(4)::before {
+  content: "VIII";
+}
+
+li.version::before {
+  display: none;
+  position: absolute;
+  transform: translateY(-50%);
+  font-family: $font3;
+  font-size: 1.2rem;
+
+  li.version::before:hover {
+    color: #e4e6c3;
+  }
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+///////////////////*****************************//////////////////////////////
+#ancrage {
+  position: absolute;
+  transform: translateY(-130px);
+}
+
+/////*******************CONTAINER TEXT*******************/////////////
+
+#VI,
+#VII,
+#VIII,
+#Info {
+  display: none;
+}
+.text {
+  padding: 20px 0;
+  position: relative;
+  border-top: 6px double #222725;
+  border-bottom: 2px solid #222725;
+}
+
+h3 {
+  padding: 20px;
+  font-family: $font2;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+p {
+  font-family: $font1;
+  padding: 20px 0;
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+///////////*******************CONTAINER IMAGE***********************//////////
+
+.container {
+  height: 750px;
+  display: flex;
+
+  justify-content: center;
+  // background: #f7f7f2;
+
+  background-color: #fcfcfb;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #f7f7ee 15%, transparent 5%),
+    linear-gradient(225deg, #f7f7ee 15%, transparent 5%),
+    linear-gradient(45deg, #f7f7ee 15%, transparent 5%),
+    linear-gradient(315deg, #f7f7ee 15%, #fcfcfb 5%);
+  background-position: 12px 0, 12px 0, 0 0, 0 0;
+  background-size: 12px 12px;
+  background-repeat: repeat;
+}
+
+#container {
+  height: 700px;
+  align-self: center;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  border: 1px solid #e4e6c3;
+
+  @media screen and (max-width: 570px) {
+    height: 600px;
+  }
+  @media screen and (max-width: 450px) {
+    height: 500px;
+  }
+}
+///////////************** Bouton **********************///////////////////
+.boutton {
+  border-top: 2px solid #222725;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 50px;
+}

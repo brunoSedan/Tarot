@@ -1,0 +1,38 @@
+header {
+  max-width: 1000px;
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background: url(../assets/image/bacground-copy.png) no-repeat center top;
+  padding: 0 40px;
+  // background-size: 80%;
+  display: flex;
+  justify-content: left;
+
+  @media screen and (max-width: 880px) {
+    background-size: 600px;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+  }
+}
+
+header-text {
+  text-align: left;
+  align-self: end;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: $font2;
+  // transform: translateX(-30px);
+}
+h2 {
+  //   text-transform: uppercase;
+  font-family: $font1;
+}
+
+h2:last-child {
+  text-align: right;
+  // transform: translateX(+20px);
+}

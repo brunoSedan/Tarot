@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "philosopher";
+  src: url(./font/CharlemagneStd-Bold.otf);
+}
+@font-face {
+  font-family: "BellGothicBlack";
+  src: url(./font/BellGothicStd-Black.otf);
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url(./font/BreeSerif-Regular.ttf);
+}
+$font3: Bree, sans-serif;
+$font2: philosopher, sans-serif;
+$font1: BellGhothicBlack, sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  color: #121113;
+}
+li,
+i {
+  font-family: $font3;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  transform: scaleY(1.2);
+  transition: 0.4s ease;
+  position: relative;
+  font-weight: 600;
+
+  @media screen and (max-width: 900px) {
+    font-size: 0.8rem;
+  }
+}
+
+li:hover,
+i:hover {
+  transition: 0.2s ease;
+  color: #e4e6c3;
+}
+
+#previous,
+#next {
+  display: none;
+}
