@@ -176,6 +176,11 @@ li.version::before li.version::before:hover {
   border-top: 6px double #222725;
   border-bottom: 2px solid #222725;
 }
+@media screen and (max-width: 550px) {
+  .text {
+    padding: 10px 0;
+  }
+}
 
 h3 {
   padding: 20px;
@@ -183,6 +188,11 @@ h3 {
   font-size: 1.8rem;
   text-transform: uppercase;
   position: relative;
+}
+@media screen and (max-width: 550px) {
+  h3 {
+    font-size: 1.4rem;
+  }
 }
 
 p {
@@ -192,9 +202,15 @@ p {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 550px) {
+  p {
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}
 
 .container {
-  height: 750px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   background-color: #fcfcfb;
@@ -220,6 +236,16 @@ p {
 @media screen and (max-width: 450px) {
   #container {
     height: 500px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #container {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #container {
+    height: 300px;
   }
 }
 

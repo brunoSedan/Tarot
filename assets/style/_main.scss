@@ -82,6 +82,10 @@ li.version::before {
   position: relative;
   border-top: 6px double #222725;
   border-bottom: 2px solid #222725;
+
+  @media screen and (max-width: 550px) {
+    padding: 10px 0;
+  }
 }
 
 h3 {
@@ -90,6 +94,10 @@ h3 {
   font-size: 1.8rem;
   text-transform: uppercase;
   position: relative;
+
+  @media screen and (max-width: 550px) {
+    font-size: 1.4rem;
+  }
 }
 
 p {
@@ -98,17 +106,21 @@ p {
   max-width: 800px;
   width: 80%;
   margin: 0 auto;
+
+  @media screen and (max-width: 550px) {
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
 }
 
 ///////////*******************CONTAINER IMAGE***********************//////////
 
 .container {
-  height: 750px;
+  padding: 10px;
   display: flex;
 
   justify-content: center;
   // background: #f7f7f2;
-
   background-color: #fcfcfb;
   opacity: 1;
   background-image: linear-gradient(135deg, #f7f7ee 15%, transparent 5%),
@@ -132,6 +144,12 @@ p {
   }
   @media screen and (max-width: 450px) {
     height: 500px;
+  }
+  @media screen and (max-width: 350px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 300px) {
+    height: 300px;
   }
 }
 ///////////************** Bouton **********************///////////////////
